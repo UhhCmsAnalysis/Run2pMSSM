@@ -1,1 +1,10 @@
-testing
+how to add a result
+
+1. add a folder SUSYYNNN to idata [this has already been done for a few analyses
+
+2. add files to to SUSYYNNN:
+a) cme.txt
+b) {counts.txt, data_bg.txt, lumi.txt} OR maxllhd.txt 
+
+
+3. add SUSYYNNN to calcLlhd.sh, and run, and run calcLlhd.sh
