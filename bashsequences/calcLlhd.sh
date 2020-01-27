@@ -23,4 +23,4 @@ python scripts/calcLlhdMultiCount.py idata/SUS16033/counts.txt idata/SUS16033/da
 # 7+8+13
 ########
 #this just multiplies the likelihoods for each pMSSM point
-./combineLlhd.py "idata/SUS12024/llhd.txt,idata/SUS12011/llhd.txt,idata/SUS13012/llhd.txt,idata/SUS16033/llhd.txt" "idata/SUS12024_SUS12011_SUS13012_SUS16033/llhd.txt"
+python scripts/combineLlhd.py "idata/SUS12024/llhd.txt,idata/SUS12011/llhd.txt,idata/SUS13012/llhd.txt,idata/SUS16033/llhd.txt" "idata/SUS12024_SUS12011_SUS13012_SUS16033/llhd.txt"

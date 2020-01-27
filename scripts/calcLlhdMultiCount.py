@@ -116,7 +116,7 @@ else:
 LUMI.close()
 
 # read in cross signal xsections
-path_xsect = glob.glob("../idata/xsect/xsect_{0}TeV*.txt".format(cme))
+path_xsect = glob.glob("idata/xsect/xsect_{0}TeV*.txt".format(cme))
 path_xsect = ",".join(path_xsect)
 xsection_ci,xsection = slurptable(path_xsect,True)
 _xsection_ci = xsection_ci["xsect_{0}TeV_pb".format(cme)]
@@ -130,7 +130,7 @@ LLHD = open(path_llhd,"w")
 LLHD.write("ID\tN_TOT\tllhd_000\tllhd_050\tllhd_100\tllhd_150\n")
 
 # define the single count likelihood functions
-rt.gROOT.ProcessLine(".L calcLlhdSingleCount.C+")
+rt.gROOT.ProcessLine(".L scripts/calcLlhdSingleCount.C+")
 def myllhd(_N,_S,_B,_dB,w=1):
     if options.numeric:
         return rt.llhd(_N,_S*w,_B,_dB)
