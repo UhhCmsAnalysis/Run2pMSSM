@@ -1,3 +1,7 @@
+# Repo for maintaining Run-2 pMSSM results
+
+## Setup
+
 ```
 cmsrel CMSSW_10_0_5
 cd CMSSW_10_0_5/src/
