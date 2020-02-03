@@ -1,3 +1,11 @@
+```
+cmsrel CMSSW_10_0_5
+cd CMSSW_10_0_5/src/
+cmsenv
+git clone https://github.com/UhhCmsAnalysis/Run2pMSSM
+cd Run2pMSSM
+```
+
 how to add a result
 
 1. add a folder SUSYYNNN to idata [this has already been done for a few analyses
