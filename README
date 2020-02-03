@@ -1,3 +1,25 @@
+# AOD-compatible TreeMaker
+
+This is a customized fork of TreeMaker compatible with sideloading AOD files.
+
+## Workflow
+
+Custom scripts are available in `Production/aod_support/`:
+
+1.  Run `create_AOD_filelists_from_datasets.py` to create your own list of AOD file names you want to process
+2.  Place file lists in `Production/python/campaign/`
+3.  Create dictionaries in `Production/test/condorSub/` with `create_dictionaries_for_AOD_filelists.py`
+4.  Create a file name catalogue which maps AOD files to miniAOD files with `create_miniAOD_filename_catalogue.py`
+
+## Supporting scripts
+
+In `Production/aod_support/`, you can find
+* scripts to create AOD file lists for custom dataset paths
+* mark already processed ntuples as done
+* run unit tests with AOD files
+
+# TreeMaker
+
 # Repo for maintaining Run-2 pMSSM results
 
 ## Setup
