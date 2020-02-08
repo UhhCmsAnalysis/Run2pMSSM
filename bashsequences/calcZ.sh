@@ -29,4 +29,4 @@
 
 ./scripts/calcZ.py idata/SUS12024_SUS12011_SUS13012_SUS16033/llhd.txt
 
-python scripts/combineZ.py
+python scripts/combineZ.py # this is for combining overlapping analyses

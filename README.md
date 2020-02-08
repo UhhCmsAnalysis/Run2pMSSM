@@ -18,7 +18,7 @@ how to add a result
 
 a) cme.txt
 
-b) {counts.txt, data_bg.txt, lumi.txt} OR maxllhd.txt 
+b) {counts.txt, data_bg.txt, lumi.txt} OR maxllhd.txt
 
 3. add SUSYYNNN to bashsequences/calcLlhd.sh, and run, and run:
 

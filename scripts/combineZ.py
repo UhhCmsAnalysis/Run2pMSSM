@@ -51,7 +51,7 @@ def combine(ofile,ifiles):
 
     # open output file
     c = "mkdir {0}".format(os.path.split(ofile)[0])
-    os.system(c)
+    if not os.path.exists("{0}".format(os.path.split(ofile)[0])): os.system(c)
     OFILE = open(ofile,"w")
     OFILE.write("ID\t{0}\n".format("\t".join(header)))
     for id in ID:
