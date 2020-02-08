@@ -8,6 +8,8 @@ cd CMSSW_10_0_5/src/
 cmsenv
 git clone https://github.com/UhhCmsAnalysis/Run2pMSSM
 cd Run2pMSSM
+mkdir odata
+mkdir odata/pMSSMtree
 ```
 
 how to add a result
@@ -31,3 +33,5 @@ bash bashsequences/calcLlhd.sh
 bash bashsequences/calcZ.sh
 ```
 
+create a pMSSM tree:
+python scripts/pMSSMtree.py "scripts/pMSSMtree.cfg.py" odata/pMSSMtree/pMSSMtree.root
