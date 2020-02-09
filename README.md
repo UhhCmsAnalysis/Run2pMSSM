@@ -13,6 +13,9 @@ mkdir odata/pMSSMtree
 mkdir odata/hist_sel
 mkdir odata/hist_fs
 mkdir odata/hist_Z
+mkdir odata/distributions_Z
+mkdir odata/survprob_sel
+mkdir odata/distributions_2D_sel
 ```
 
 how to add a result
@@ -41,9 +44,19 @@ create a pMSSM tree:
 python scripts/pMSSMtree.py "scripts/pMSSMtree.cfg.py" odata/pMSSMtree/pMSSMtree.root
 ```
 
-create basic histograms
+create histograms in root files; best to break open fillHist_sel.sh and run things individually, but you can also just do:
 ```
 source scripts/fillHist_sel.sh
+```
+
+ok, time to make nice canvases and stuff
+
+```
+      python scripts/drawZ.py
+      python scripts/drawZ2D.py
+      python scripts/draw1D.py odata/hist_sel scripts/draw1D_combinations_cfg.py odata/distributions_1D_sel/
+      python scripts/drawSurvProb.py odata/hist_sel scripts/draw1D_combinations_sp_cfg.py odata/survprob_sel
+      python scripts/draw2D.py odata/hist_sel/ odata/distributions_2D_sel
 ```
 
 
