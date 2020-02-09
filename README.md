@@ -10,6 +10,9 @@ git clone https://github.com/UhhCmsAnalysis/Run2pMSSM
 cd Run2pMSSM
 mkdir odata
 mkdir odata/pMSSMtree
+mkdir odata/hist_sel
+mkdir odata/hist_fs
+mkdir odata/hist_Z
 ```
 
 how to add a result
@@ -34,4 +37,13 @@ bash bashsequences/calcZ.sh
 ```
 
 create a pMSSM tree:
+```
 python scripts/pMSSMtree.py "scripts/pMSSMtree.cfg.py" odata/pMSSMtree/pMSSMtree.root
+```
+
+create basic histograms
+```
+source scripts/fillHist_sel.sh
+```
+
+
