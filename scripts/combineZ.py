@@ -12,9 +12,10 @@ combination = []
 # 7 TeV
 
 combination.append(["lossycombined7and8and13TeV/Z.txt",[]]) #usually for overlapping signal regions, this is just an example
-combination[-1][1].extend(["SUS12011/Z.txt"])
-combination[-1][1].extend(["SUS13012/Z.txt"])
-combination[-1][1].extend(["SUS16033/Z.txt"])
+#combination[-1][1].extend(["SUS12011/Z.txt"])
+#combination[-1][1].extend(["SUS13012/Z.txt"])
+#combination[-1][1].extend(["SUS16033/Z.txt"])
+combination[-1][1].extend(["SUSRa2bMockup/Z.txt"])
 
 def combine(ofile,ifiles):
     # read in data
