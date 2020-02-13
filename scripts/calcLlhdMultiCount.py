@@ -3,7 +3,7 @@
 import os,glob
 import sys
 import math
-
+from tqdm import tqdm
 #this is the version of the script where analyses have provided raw number of simulated counts - then we apply xsec, lumi and so forth
 # the 2017 version assumes the analyses have applied all weights, and is a bit configurable. 
 
@@ -154,11 +154,11 @@ start = options.start
 stop = len(counts)
 if options.nentries is not None:
     stop = min(len(counts),start + options.nentries)
-for e in range(start,stop):
+for e in tqdm(range(start,stop)):
     #print "---------"
-    if e%10 == 0:
-        print "processing {0}/{1}".format(e,stop)
-        sys.stdout.flush()
+#    if e%10 == 0:
+#        print "processing {0}/{1}".format(e,stop)
+#        sys.stdout.flush()
     entry = counts[e]
     _id = int(entry[id_ci])
     if counts[e][N_TOT_ci] == 0.0:
