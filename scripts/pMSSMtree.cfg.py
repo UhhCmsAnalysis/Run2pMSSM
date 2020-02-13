@@ -8,18 +8,18 @@ FILE.close()
 treeCfg = [
     [ "params",
       {"files":"idata/parameters/params_batch*.txt","base":""}],
-    [ "moreparams",
-      {"files":"idata/moreparams/moreparams.txt","base":""}],
-    [ "fs",
-      {"files":"idata/fs/fs.txt","base":"fs"}],
-    [ "lilith",
-      {"files":"idata/moreparams/lilith.txt"}],
-#    [ "xsect13",
-#      {"files":"idata/xsect/xsect_13*txt","base":"","skip_ID":[],"skip_col":"pointName"}],
-    [ "xsect8",
-      {"files":"idata/xsect/xsect_8*txt","base":"","skip_ID":[2321,8344,6640],"skip_col":"pointName"}],
-    [ "xsect7",
-      {"files":"idata/xsect/xsect_7*txt","base":"","skip_ID":[2321,8344,6640]}],
+    #[ "moreparams",
+#      {"files":"idata/moreparams/moreparams.txt","base":""}],
+#    [ "fs",
+#      {"files":"idata/fs/fs.txt","base":"fs"}],
+#    [ "lilith",
+#      {"files":"idata/moreparams/lilith.txt"}],
+    [ "xsect13",
+      {"files":"idata/xsect/xsect_13*txt","base":"","skip_ID":[],"skip_col":"pointName"}],
+#    [ "xsect8",
+#      {"files":"idata/xsect/xsect_8*txt","base":"","skip_ID":[2321,8344,6640],"skip_col":"pointName"}],
+#    [ "xsect7",
+#      {"files":"idata/xsect/xsect_7*txt","base":"","skip_ID":[2321,8344,6640]}],
     ]
 datadir = "idata"
 #################################
@@ -35,10 +35,10 @@ def addLlhd2Cfg(anaList,ext=""):
             files = datadir + "/" + ana[0] + "/llhd" + sr + ext + ".txt"
             treeCfg.append([key,{"files":files,"base":base}])
 
-addLlhd2Cfg(ana7)
-addLlhd2Cfg(ana8)
-addLlhd2Cfg(ana13)
-addLlhd2Cfg(ana7n8n13)
+#addLlhd2Cfg(ana7)
+#addLlhd2Cfg(ana8)
+#addLlhd2Cfg(ana13)
+#addLlhd2Cfg(ana7n8n13)
 
 #################################
 # Z-values
@@ -56,11 +56,11 @@ def addZ2Cfg(anaList,ext=""):
             #addZ2Cfg(ana7)
 #addZ2Cfg(ana8)
 #addZ2Cfg(ana7n8)
-addZ2Cfg(ana7z)
-addZ2Cfg(ana8z)
+#addZ2Cfg(ana7z)
+#addZ2Cfg(ana8z)
 addZ2Cfg(ana13z)
-addZ2Cfg(ana7n8n13z)
-addZ2Cfg(ana7n8n13lossyz)
+#addZ2Cfg(ana7n8n13z)
+#addZ2Cfg(ana7n8n13lossyz)
 
 
 ################################

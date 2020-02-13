@@ -189,12 +189,13 @@ def addZ(analist):
                 _bins.append(_bins[-1] + 0.5)
             varCfg.update({key_rebin:{"name":key_rebin,"var":key,"title":"Z","customBinning":_bins,"unit":""}})
 
-addZ(ana7)
-addZ(ana8)
-addZ(ana7z)
-addZ(ana8z)
-addZ(ana7n8n13z)
-addZ(ana7n8n13lossyz)
+#addZ(ana7)
+#addZ(ana8)
+#addZ(ana7z)
+#addZ(ana8z)
+addZ(ana13z)
+#addZ(ana7n8n13z)
+#addZ(ana7n8n13lossyz)
 
 logXsectBinning = [-3,-2,-1.5,-1,-.5,0.,0.333,0.666,1.,1.333,1.666,2,2.333,2.666,3.,3.333,3.666,4,5,6]
 #[-6,-5,-4,-3,-2.5,-2,-1.5,-1,-.5,0.,0.333,0.666,1.,1.333,1.666,2,2.333,2.666,3.,3.333,3.666,4,5,6]
