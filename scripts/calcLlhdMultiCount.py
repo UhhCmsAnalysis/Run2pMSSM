@@ -163,9 +163,6 @@ for e in range(start,stop):
     _id = int(entry[id_ci])
     if counts[e][N_TOT_ci] == 0.0:
         continue
-    if counts[e][N_TOT_ci] < 5000:
-        print "WARNING: skipping point {0} with only {1} entries processed".format(_id,N_TOT_ci)
-        continue
     #print "id",_id
     _xsection = xsection[_id][_xsection_ci]
     #print _xsection
